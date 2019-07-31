@@ -1,0 +1,17 @@
+D:\R_and_D\DOT_NET_Core\DOT_NET_Core_2\AdventureWorksAPI\bin\Release\netcoreapp2.1\win-x86\hostpolicy.dll
+D:\R_and_D\DOT_NET_Core\DOT_NET_Core_2\AdventureWorksAPI\bin\Release\netcoreapp2.1\win-x86\hostfxr.dll
+D:\R_and_D\DOT_NET_Core\DOT_NET_Core_2\AdventureWorksAPI\bin\Release\netcoreapp2.1\win-x86\AdventureWorksAPI.exe
+D:\R_and_D\DOT_NET_Core\DOT_NET_Core_2\AdventureWorksAPI\bin\Release\netcoreapp2.1\win-x86\AdventureWorksAPI.deps.json
+D:\R_and_D\DOT_NET_Core\DOT_NET_Core_2\AdventureWorksAPI\bin\Release\netcoreapp2.1\win-x86\AdventureWorksAPI.runtimeconfig.json
+D:\R_and_D\DOT_NET_Core\DOT_NET_Core_2\AdventureWorksAPI\bin\Release\netcoreapp2.1\win-x86\AdventureWorksAPI.runtimeconfig.dev.json
+D:\R_and_D\DOT_NET_Core\DOT_NET_Core_2\AdventureWorksAPI\bin\Release\netcoreapp2.1\win-x86\AdventureWorksAPI.dll
+D:\R_and_D\DOT_NET_Core\DOT_NET_Core_2\AdventureWorksAPI\bin\Release\netcoreapp2.1\win-x86\AdventureWorksAPI.pdb
+D:\R_and_D\DOT_NET_Core\DOT_NET_Core_2\AdventureWorksAPI\obj\Release\netcoreapp2.1\win-x86\AdventureWorksAPI.csprojAssemblyReference.cache
+D:\R_and_D\DOT_NET_Core\DOT_NET_Core_2\AdventureWorksAPI\obj\Release\netcoreapp2.1\win-x86\AdventureWorksAPI.csproj.CoreCompileInputs.cache
+D:\R_and_D\DOT_NET_Core\DOT_NET_Core_2\AdventureWorksAPI\obj\Release\netcoreapp2.1\win-x86\AdventureWorksAPI.RazorAssemblyInfo.cache
+D:\R_and_D\DOT_NET_Core\DOT_NET_Core_2\AdventureWorksAPI\obj\Release\netcoreapp2.1\win-x86\AdventureWorksAPI.RazorAssemblyInfo.cs
+D:\R_and_D\DOT_NET_Core\DOT_NET_Core_2\AdventureWorksAPI\obj\Release\netcoreapp2.1\win-x86\AdventureWorksAPI.AssemblyInfoInputs.cache
+D:\R_and_D\DOT_NET_Core\DOT_NET_Core_2\AdventureWorksAPI\obj\Release\netcoreapp2.1\win-x86\AdventureWorksAPI.AssemblyInfo.cs
+D:\R_and_D\DOT_NET_Core\DOT_NET_Core_2\AdventureWorksAPI\obj\Release\netcoreapp2.1\win-x86\AdventureWorksAPI.RazorTargetAssemblyInfo.cache
+D:\R_and_D\DOT_NET_Core\DOT_NET_Core_2\AdventureWorksAPI\obj\Release\netcoreapp2.1\win-x86\AdventureWorksAPI.dll
+D:\R_and_D\DOT_NET_Core\DOT_NET_Core_2\AdventureWorksAPI\obj\Release\netcoreapp2.1\win-x86\AdventureWorksAPI.pdb

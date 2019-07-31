@@ -1,0 +1,3 @@
+2019-06-17T11:46:59.4178781+05:30 0HLNITDJT9IF0:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2019-06-17T11:46:59.4178781+05:30 0HLNITDJT9IEU:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2019-06-17T11:47:01.5428781+05:30 0HLNITDJT9IEU:00000001 [WRN] The property '"ShiftId"' on entity type '"Shift"' is of type 'byte', but is set up to use a SQL Server identity column. This requires that values starting at 255 and counting down will be used for temporary key values. A temporary key value is needed for every entity inserted in a single call to 'SaveChanges'. Care must be taken that these values do not collide with real key values. (316a401d)

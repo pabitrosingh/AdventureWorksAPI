@@ -1,0 +1,74 @@
+2019-07-05T10:39:29.3994232+05:30 0HLO10RQHFTDQ:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2019-07-05T10:39:37.8514232+05:30 0HLO10RQHFTDS:00000003 [WRN] The property '"ShiftId"' on entity type '"Shift"' is of type 'byte', but is set up to use a SQL Server identity column. This requires that values starting at 255 and counting down will be used for temporary key values. A temporary key value is needed for every entity inserted in a single call to 'SaveChanges'. Care must be taken that these values do not collide with real key values. (316a401d)
+2019-07-05T15:59:42.4900528+05:30 0HLO16EOJA5BI:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2019-07-05T16:01:55.1790528+05:30 0HLO16EOJA5BM:00000001 [WRN] The property '"ShiftId"' on entity type '"Shift"' is of type 'byte', but is set up to use a SQL Server identity column. This requires that values starting at 255 and counting down will be used for temporary key values. A temporary key value is needed for every entity inserted in a single call to 'SaveChanges'. Care must be taken that these values do not collide with real key values. (316a401d)
+2019-07-05T16:13:26.5140528+05:30 0HLO16ME5OPT2:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2019-07-05T16:13:27.3410528+05:30 0HLO16ME5OPT2:00000001 [WRN] The property '"ShiftId"' on entity type '"Shift"' is of type 'byte', but is set up to use a SQL Server identity column. This requires that values starting at 255 and counting down will be used for temporary key values. A temporary key value is needed for every entity inserted in a single call to 'SaveChanges'. Care must be taken that these values do not collide with real key values. (316a401d)
+2019-07-05T16:13:38.4510528+05:30 0HLO16ME5OPT1:00000003 [ERR] Connection id ""0HLO16ME5OPT1"", Request id ""0HLO16ME5OPT1:00000003"": An unhandled exception was thrown by the application. (560e7d32)
+System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near the keyword 'from'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in C:\projects\dapper\Dapper\SqlMapper.Async.cs:line 419
+   at AdventureWorksAPI.DB.ProductionDBRepository.GetWorkOrderDetailsFromDB(String WorkOrderType) in D:\R_and_D\DOT_NET_Core\DOT_NET_Core_2\AdventureWorksAPI\DB\ProductionDBRepository.cs:line 153
+   at AdventureWorksAPI.Controllers.ProductionController.GetWorkOrderDetails(String WorkOrderType, JQXGrid JQXGrid) in D:\R_and_D\DOT_NET_Core\DOT_NET_Core_2\AdventureWorksAPI\Controllers\ProductionController.cs:line 191
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.Elm.ElmCaptureMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.Elm.ElmPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+ClientConnectionId:685681ef-d602-4517-8183-ffe5a1eca523
+Error Number:156,State:1,Class:15
+2019-07-05T16:15:16.4820528+05:30 0HLO16NEUDAG1:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2019-07-05T16:15:17.2530528+05:30 0HLO16NEUDAG1:00000001 [WRN] The property '"ShiftId"' on entity type '"Shift"' is of type 'byte', but is set up to use a SQL Server identity column. This requires that values starting at 255 and counting down will be used for temporary key values. A temporary key value is needed for every entity inserted in a single call to 'SaveChanges'. Care must be taken that these values do not collide with real key values. (316a401d)
+2019-07-05T17:16:23.5881852+05:30 0HLO17PJQLJGC:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2019-07-05T17:16:24.4482712+05:30 0HLO17PJQLJGC:00000001 [WRN] The property '"ShiftId"' on entity type '"Shift"' is of type 'byte', but is set up to use a SQL Server identity column. This requires that values starting at 255 and counting down will be used for temporary key values. A temporary key value is needed for every entity inserted in a single call to 'SaveChanges'. Care must be taken that these values do not collide with real key values. (316a401d)
+2019-07-05T17:28:15.5113704+05:30 0HLO17PJQLJGE:00000001 [ERR] Connection id ""0HLO17PJQLJGE"", Request id ""0HLO17PJQLJGE:00000001"": An unhandled exception was thrown by the application. (560e7d32)
+System.InvalidOperationException: BeginExecuteReader: CommandText property has not been initialized
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__122_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in C:\projects\dapper\Dapper\SqlMapper.Async.cs:line 419
+   at AdventureWorksAPI.DB.ProductionDBRepository.GetWorkOrderDetailsFromDB(String WorkOrderType) in D:\R_and_D\DOT_NET_Core\DOT_NET_Core_2\AdventureWorksAPI\DB\ProductionDBRepository.cs:line 153
+   at AdventureWorksAPI.Controllers.ProductionController.GetWorkOrderDetails(String WorkOrderType, JQXGrid JQXGrid) in D:\R_and_D\DOT_NET_Core\DOT_NET_Core_2\AdventureWorksAPI\Controllers\ProductionController.cs:line 196
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.Elm.ElmCaptureMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.Elm.ElmPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)

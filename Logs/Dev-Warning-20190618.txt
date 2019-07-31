@@ -1,0 +1,97 @@
+2019-06-18T15:29:15.5017274+05:30  [FTL] Unable to start Kestrel. (fc6a528d)
+System.IO.IOException: Failed to bind to address http://[::]:5050: address already in use. ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted ---> System.Net.Sockets.SocketException: Only one usage of each socket address (protocol/network address/port) is normally permitted
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransport.BindAsync()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransport.BindAsync()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.<>c__DisplayClass22_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.ListenOptions.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.AnyIPListenOptions.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(IServerAddressesFeature addresses, KestrelServerOptions serverOptions, ILogger logger, Func`2 createBinding)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(IWebHost host, CancellationToken token, String shutdownMessage)
+2019-06-18T15:29:38.4870257+05:30 0HLNJQEME20F1:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2019-06-18T15:30:02.4604228+05:30 0HLNJQEME20F4:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.ArgumentException: Invalid type owner for DynamicMethod.
+   at System.Reflection.Emit.DynamicMethod.Init(String name, MethodAttributes attributes, CallingConventions callingConvention, Type returnType, Type[] signature, Type owner, Module m, Boolean skipVisibility, Boolean transparentMethod)
+   at System.Reflection.Emit.DynamicMethod..ctor(String name, Type returnType, Type[] parameterTypes, Type owner, Boolean skipVisibility)
+   at Dapper.SqlMapper.GetTypeDeserializerImpl(Type type, IDataReader reader, Int32 startBound, Int32 length, Boolean returnNullIfFirstMissing) in C:\projects\dapper\Dapper\SqlMapper.cs:line 3083
+   at Dapper.SqlMapper.TypeDeserializerCache.GetReader(IDataReader reader, Int32 startBound, Int32 length, Boolean returnNullIfFirstMissing) in C:\projects\dapper\Dapper\SqlMapper.TypeDeserializerCache.cs:line 153
+   at Dapper.SqlMapper.TypeDeserializerCache.GetReader(Type type, IDataReader reader, Int32 startBound, Int32 length, Boolean returnNullIfFirstMissing) in C:\projects\dapper\Dapper\SqlMapper.TypeDeserializerCache.cs:line 50
+   at Dapper.SqlMapper.GetDeserializer(Type type, IDataReader reader, Int32 startBound, Int32 length, Boolean returnNullIfFirstMissing) in C:\projects\dapper\Dapper\SqlMapper.cs:line 1787
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in C:\projects\dapper\Dapper\SqlMapper.Async.cs:line 427
+   at AdventureWorksAPI.DB.DashboardDBRepository.GetTerritorySalesFromDB() in D:\R_and_D\DOT_NET_Core\DOT_NET_Core_2\AdventureWorksAPI\DB\DashboardDBRepository.cs:line 70
+   at AdventureWorksAPI.Controllers.DashboardController.GetTerritorySalesReport() in D:\R_and_D\DOT_NET_Core\DOT_NET_Core_2\AdventureWorksAPI\Controllers\DashboardController.cs:line 47
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.Elm.ElmCaptureMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.Elm.ElmPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.Elm.ElmCaptureMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.Elm.ElmPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-06-18T15:31:39.7081466+05:30 0HLNJQFQIC05L:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2019-06-18T17:15:20.4495773+05:30 0HLNJS9OFNCKE:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2019-06-18T17:17:34.7165773+05:30 0HLNJSB0GF90E:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2019-06-18T17:54:05.6995248+05:30 0HLNJSVDEVQMB:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2019-06-18T17:54:34.6604206+05:30 0HLNJSVDEVQME:00000002 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Data.SqlClient.SqlException (0x80131904): Conversion failed when converting the nvarchar value 'abc' to data type int.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at System.Data.SqlClient.SqlDataReader.<>c__DisplayClass190_0.<ReadAsync>b__1(Task t)
+   at System.Data.SqlClient.SqlDataReader.InvokeRetryable[T](Func`2 moreFunc, TaskCompletionSource`1 source, IDisposable objectToDispose)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in C:\projects\dapper\Dapper\SqlMapper.Async.cs:line 437
+   at AdventureWorksAPI.DB.DashboardDBRepository.GetProductSalesReportFromDB(String Year) in D:\R_and_D\DOT_NET_Core\DOT_NET_Core_2\AdventureWorksAPI\DB\DashboardDBRepository.cs:line 93
+   at AdventureWorksAPI.Controllers.DashboardController.GetProductSalesReport(String Year) in D:\R_and_D\DOT_NET_Core\DOT_NET_Core_2\AdventureWorksAPI\Controllers\DashboardController.cs:line 58
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.Elm.ElmCaptureMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.Elm.ElmPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.Elm.ElmCaptureMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.Elm.ElmPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:1fc4041a-35b6-423b-a8e1-faccde887250
+Error Number:245,State:1,Class:16
+2019-06-18T18:02:29.2078706+05:30 0HLNJT43H5270:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)

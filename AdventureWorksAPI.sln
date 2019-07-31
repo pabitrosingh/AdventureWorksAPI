@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventureWorksAPI", "AdventureWorksAPI.csproj", "{D467D059-AEF2-4D41-BD74-DE403C9EADD6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D467D059-AEF2-4D41-BD74-DE403C9EADD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D467D059-AEF2-4D41-BD74-DE403C9EADD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D467D059-AEF2-4D41-BD74-DE403C9EADD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D467D059-AEF2-4D41-BD74-DE403C9EADD6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {94437B98-135D-43EB-8FCC-F873C080A02D}
+	EndGlobalSection
+EndGlobal
