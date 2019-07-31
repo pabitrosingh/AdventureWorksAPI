@@ -46,7 +46,7 @@ namespace AdventureWorksAPI
 
             //custom validation service
             services.AddSingleton<IValidation, Validation>();
-            services.AddSingleton<IDBRepository, DBRepository>();
+            services.AddSingleton<IHRDBRepository, HRDBRepository>();
             services.AddSingleton<IDashboardDBRepository, DashboardDBRepository>();
             services.AddSingleton<IProductionDBRepository, ProductionDBRepository>();
             services.AddSingleton<ISalesDBrepository, SalesDBRepository>();

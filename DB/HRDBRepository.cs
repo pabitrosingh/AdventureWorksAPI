@@ -12,7 +12,7 @@ using AdventureWorksAPI.Models;
 
 namespace AdventureWorksAPI.DB
 {
-    public class DBRepository : IDBRepository
+    public class HRDBRepository : IHRDBRepository
     {
         private readonly IConfiguration _configuration;
         private readonly ILogger _logger;
@@ -25,8 +25,8 @@ namespace AdventureWorksAPI.DB
             }
         }
 
-        public DBRepository(IConfiguration configuration,
-                            ILogger<DBRepository> logger)
+        public HRDBRepository(IConfiguration configuration,
+                            ILogger<HRDBRepository> logger)
         {
             _logger = logger;
             _configuration = configuration;

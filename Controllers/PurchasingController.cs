@@ -20,7 +20,7 @@ namespace AdventureWorksAPI.Controllers
         private readonly ILogger _logger;
         private readonly IValidation _validation;
         public PurchasingController(AdventureWorksContext adventureWorksContext,
-                                    ILogger<EmployeeController> logger,
+                                    ILogger<PurchasingController> logger,
                                     IValidation Validation,
                                     IPurchasingDBrepository PurchasingDBrepository)
         {

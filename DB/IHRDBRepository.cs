@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace AdventureWorksAPI.DB
 {
-    public interface IDBRepository
+    public interface IHRDBRepository
     {
         Task<List<Object>> GetEmployee();
         Task<Object> GetEmployee(int empid);

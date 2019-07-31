@@ -21,7 +21,7 @@ namespace AdventureWorksAPI.Controllers
         private readonly IValidation _validation;
 
         public SalesController(AdventureWorksContext adventureWorksContext,
-                                    ILogger<EmployeeController> logger,
+                                    ILogger<SalesController> logger,
                                     IValidation Validation,
                                     ISalesDBrepository SalesDBrepository)
         {
